@@ -1,6 +1,5 @@
 # TaskMaster - Your Ultimate To-Do List Web Application
 
-![TaskMaster Logo](link-to-logo)
 
 TaskMaster is a powerful and intuitive to-do list web application built using Node.js and MongoDB. Organize your tasks effortlessly, boost productivity, and stay on top of your daily goals with this feature-rich application.
 
