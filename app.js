@@ -113,6 +113,8 @@ app.post("/delete", (req,res) => {
 
 })
 
-app.listen(9001,function(){
+const port = process.env.PORT || 3000
+
+app.listen(port,function(){
   console.log("server is running");
 });
