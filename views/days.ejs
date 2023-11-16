@@ -1,0 +1,23 @@
+
+<%- include("header") -%>
+  <section class="section1">
+    <div id="heading" class="box">
+      <h1><%= today %></h1>
+    </div>
+    <div class="box">
+      <% listItem.forEach((elements)=>{ %>
+        <form class="form-group" method="post" action="/delete">
+          <div class="item form-control">
+          <input type="checkbox" name="checkBox" value=<%=elements._id%> onchange="this.form.submit()">
+          <p> <%= elements.name %></p>
+          </div>
+          <input type="hidden" name="work" class="form-control" value="<%= today %>">
+        </form>
+      <% } );%>
+      <form class="items" action="/" method="post">
+        <input type="text" name="listItem" value="" placeholder="New Task" autocomplete="off" required autofocus >
+        <button type="submit" name="work" value=<%= today %>>+</button>
+      </form>
+    </div>
+<%- include("footer") -%>
+  </section>
